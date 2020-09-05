@@ -1,4 +1,4 @@
-import wget, os
+# import wget, os
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -10,22 +10,22 @@ import datetime as dt
 class Utilities:
     fileName = "params.dat"
    
-    def __init__(self):
-        pass
+    # def __init__(self):
+    #     pass
     
-    def delete_directoty_content(self, data_path):
-        for f in os.listdir(data_path):
-            os.remove(data_path + f)
+    # def delete_directoty_content(self, data_path):
+    #     for f in os.listdir(data_path):
+    #         os.remove(data_path + f)
 
-    def download(self, url, path, file):
-        wget.download(url, path + file)
+    # def download(self, url, path, file):
+    #     wget.download(url, path + file)
 
-    def get_params(self, fileName):
-        params = {}
-        for line in open(fileName):
-            key_value = line.strip().split("|")
-            if not line.startswith("#"): params[key_value[0].strip()] = key_value[1].strip()
-        return params
+    # def get_params(self, fileName):
+    #     params = {}
+    #     for line in open(fileName):
+    #         key_value = line.strip().split("|")
+    #         if not line.startswith("#"): params[key_value[0].strip()] = key_value[1].strip()
+    #     return params
     
     # Function to fix dates
     def dates_fix(self,df):

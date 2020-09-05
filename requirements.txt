@@ -28,4 +28,5 @@ gunicorn
 zope.interface==5.1.0
 wcwidth==0.2.5
 dash_bootstrap_components
-wget
+base64
+DateTime==4.3
