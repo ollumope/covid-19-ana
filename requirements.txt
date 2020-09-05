@@ -29,3 +29,4 @@ zope.interface==5.1.0
 wcwidth==0.2.5
 dash_bootstrap_components
 DateTime==4.3
+xlrd==1.2.0
