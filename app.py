@@ -400,7 +400,7 @@ def update_figure(selected_city):
         fig = px.line(filtered_df_orig, x='t', y='confirmado', 
             labels={
                      "t": "Tiempo (t)",
-                     "activo": "Estimación"
+                     "confirmado": "Estimación"
             }, title='Casos Confirmados')
         fig.add_traces(go.Scatter(x=filtered_df_pred['t'], y=filtered_df_pred['confirmado'], name='Predicho'))
         fig.add_trace(go.Scatter(x=[int(corto_plazo), int(corto_plazo)], y=[0, alto], mode="lines", name="Corto Plazo", line = dict(dash='dot')))
@@ -435,7 +435,7 @@ def update_figure(selected_city):
         fig = px.line(filtered_df_orig, x='t', y='total_rec', 
         labels={
                      "t": "Tiempo (t)",
-                     "activo": "Estimación"
+                     "total_rec": "Estimación"
             }, title= 'Recuperados')
         fig.add_traces(go.Scatter(x=filtered_df_pred['t'], y=filtered_df_pred['total_rec'], name='Predicho'))
         fig.add_trace(go.Scatter(x=[int(corto_plazo), int(corto_plazo)], y=[0, 4000], mode="lines", name="Corto Plazo", line = dict(dash='dot')))
@@ -465,7 +465,7 @@ def update_figure(selected_city):
         fig = px.line(filtered_df_orig, x='t', y='muertos', 
         labels={
                      "t": "Tiempo (t)",
-                     "activo": "Estimación"
+                     "muertos": "Estimación"
             }, title= 'Muertos')
         fig.add_traces(go.Scatter(x=filtered_df_pred['t'], y=filtered_df_pred['muertos'], name='Predicho'))
         fig.add_trace(go.Scatter(x=[int(corto_plazo), int(corto_plazo)], y=[0, 8], mode="lines", name="Corto Plazo", line = dict(dash='dot')))
@@ -495,7 +495,7 @@ def update_figure(selected_city):
         fig = px.line(filtered_df_orig, x='t', y='contagio', 
         labels={
                      "t": "Tiempo (t)",
-                     "activo": "Estimación"
+                     "contagio": "Estimación"
             }, title='Nuevos Casos')
         fig.add_traces(go.Scatter(x=filtered_df_pred['t'], y=filtered_df_pred['contagio'], name='Predicho'))
         fig.add_trace(go.Scatter(x=[int(corto_plazo), int(corto_plazo)], y=[0, 400], mode="lines", name="Corto Plazo", line = dict(dash='dot')))
