@@ -25,8 +25,8 @@ fig = go.Figure()
 
 #%%
 #Downloading data
-handle.download_censo_file()
-file_status = handle.download_covid_file()
+# handle.download_censo_file()
+file_status = 'sucess'#handle.download_covid_file()
 
 #%%
 #Loading data
